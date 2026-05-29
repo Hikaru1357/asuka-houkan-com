@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="news-icn.svg" class="cls-1" d="M1056,1426h2.03v2H1056v-2Zm3.9,0h8.1v2h-8.1v-2Zm-3.9,5h2.03v2H1056v-2Zm3.9,0h8.1v2h-8.1v-2Zm-3.9,5h2.03v2H1056v-2Zm3.9,0h8.1v2h-8.1v-2Z" transform="translate(-1056 -1426)"/>
+</svg>

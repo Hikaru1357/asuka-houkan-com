@@ -645,6 +645,16 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     .asuka-fv .p-top01__tit { margin-bottom: 48px !important; }
     .asuka-fv .p-top01__cta { margin-bottom: 64px !important; }
   }
+  /* スマホ：キャッチフレーズのフォントが大きすぎて行末が改行されないようサイズ調整 */
+  @media screen and (max-width: 47.9375em) {
+    .asuka-fv .p-top01__tit {
+      font-size: 21px !important;
+      line-height: 1.75 !important;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    .asuka-fv .p-top01__tit .bd { display: inline; }
+  }
 </style>
 
 </head>

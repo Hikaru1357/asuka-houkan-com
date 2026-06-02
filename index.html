@@ -648,12 +648,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   /* スマホ：キャッチフレーズのフォントが大きすぎて行末が改行されないようサイズ調整 */
   @media screen and (max-width: 47.9375em) {
     .asuka-fv .p-top01__tit {
-      font-size: 21px !important;
-      line-height: 1.75 !important;
-      padding-left: 8px;
-      padding-right: 8px;
+      font-size: 17.5px !important;
+      line-height: 1.85 !important;
+      padding-left: 4px;
+      padding-right: 4px;
     }
-    .asuka-fv .p-top01__tit .bd { display: inline; }
+    /* 指定の6行で固定し、各行が折り返さないようにする（字が小さくなってもOK） */
+    .asuka-fv .p-top01__tit .bd { display: inline; white-space: nowrap; }
   }
 </style>
 
@@ -714,7 +715,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="gnav--menu flex flex-c-wrap fz-17">
           <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="service/index.html" class="nav-service arrow"><span>サービス内容</span></a></li>
           <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="flow/index.html" class="nav-flow arrow"><span>ご利用の流れ&amp;料金</span></a></li>
-          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact/index.html?type=partner" class="nav-partner arrow"><span>医療機関様<br class="pc-none">はこちら</span></a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="partner/index.html" class="nav-partner arrow"><span>医療機関様<br class="pc-none">はこちら</span></a></li>
           <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about/index.html" class="nav-about arrow"><span>明日香について</span></a></li>
           <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="staff/index.html" class="nav-staff arrow"><span>スタッフ紹介</span></a></li>
           <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="recruit/index.html" class="nav-recruit arrow"><span>採用情報</span></a></li>
@@ -762,7 +763,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="bd">『<span class="handwriting">心の通い合う看護</span>』をモットーに、</span><br>
             <span class="bd">利用者とご家族の<span class="handwriting">笑顔</span>と<span class="handwriting">希望</span>に</span><br>
             <span class="bd">沿った看護を提供し、</span><br>
-            <span class="bd"><span class="handwriting">アットホーム</span>な看護を目指します。</span>
+            <span class="bd"><span class="handwriting">アットホーム</span>な看護を</span><br class="pc-none">
+            <span class="bd">目指します。</span>
           </h2>
 
           <div class="p-top01__cta flex flex-c-wrap">
@@ -1250,7 +1252,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </li>
         </ol>
-        <div class="btn btn-ctr home_flow--cta"><a href="flow/index.html">ご利用の流れを詳しく見る</a></div>
+        <div class="btn btn-ctr home_flow--cta"><a href="flow/index.html#flow">ご利用の流れを詳しく見る</a></div>
       </div>
     </section>
 
@@ -1290,7 +1292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="home_fee--note mgn-top40">
           <p class="fz-15">※ 自己負担額の目安や、交通費・キャンセル時の取り扱いについては、初回のご相談時に詳しくご案内いたします。<br>※ 詳細はお気軽にお問い合わせください。</p>
         </div>
-        <div class="btn btn-ctr home_fee--cta"><a href="flow/index.html">料金・保険を詳しく見る</a></div>
+        <div class="btn btn-ctr home_fee--cta"><a href="flow/index.html#fee">料金・保険を詳しく見る</a></div>
       </div>
     </section>
 
@@ -1396,7 +1398,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="home_cta--list flex flex-c-wrap flex-j-ctr flex-sp-block">
           <li class="btn btn-lg btn-cta btn-contact"><a href="contact/index.html"><span class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" preserveAspectRatio="none"><path d="M2188,429.222l-2.07-2.14,2.07-1.775v3.915Zm-13.93-2.14-2.07,2.142v-3.917Zm13.93,4.085v1.97a0.865,0.865,0,0,1-.86.863h-14.28a0.865,0.865,0,0,1-.86-0.863v-1.97l3.09-3.2,3.53,3.035a2.192,2.192,0,0,0,2.76,0l3.53-3.035Zm0-8.307v0.863l-7.55,6.484a0.739,0.739,0,0,1-.91,0l-7.54-6.484V422.86a0.863,0.863,0,0,1,.86-0.86h14.28A0.863,0.863,0,0,1,2188,422.86Z" transform="translate(-2172 -422)"/></svg></span><span>お問い合わせフォーム</span></a></li>
           <li class="btn btn-lg btn-cta btn-tel"><a href="tel:0734265530"><span class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="20.031" viewBox="0 0 17 20.031" preserveAspectRatio="none"><path d="M2148.63,433.656a17.233,17.233,0,0,0-3.55-2.391,1.451,1.451,0,0,0-1.59,1.071c-0.26.732-.62,0.627-0.62,0.627s-1.36-.683-3.72-3.667a14.667,14.667,0,0,1-2.75-4.534s-0.03-.4.68-0.545a1.526,1.526,0,0,0,1.26-1.489,19.052,19.052,0,0,0-1.6-4.149,1.621,1.621,0,0,0-2.04-.382,5.178,5.178,0,0,0-2.63,5.3,18.713,18.713,0,0,0,3.88,8.685,17.009,17.009,0,0,0,7.35,5.556c3.15,1.171,5.13-1.609,5.34-1.871A1.913,1.913,0,0,0,2148.63,433.656Z" transform="translate(-2132 -418)"/></svg></span><span class="tel"><span class="num font-en fz-20">073-426-5530</span><span class="hours fz-13">電話で相談する</span></span></a></li>
-          <li class="btn btn-lg btn-cta btn-recruit"><a href="contact/index.html?type=partner"><span class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" preserveAspectRatio="none"><path d="M14,7a3,3,0,1,0-3-3A3,3,0,0,0,14,7Zm-8,0A3,3,0,1,0,3,4,3,3,0,0,0,6,7Zm0,2c-2.33,0-7,1.17-7,3.5V14H13V12.5C13,10.17,8.33,9,6,9Zm8,0a8.86,8.86,0,0,0-1.06.07,4.21,4.21,0,0,1,2.06,3.43V14h6V12.5C21,10.17,16.33,9,14,9Z"/></svg></span><span>医療機関の方</span></a></li>
+          <li class="btn btn-lg btn-cta btn-recruit"><a href="partner/index.html"><span class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" preserveAspectRatio="none"><path d="M14,7a3,3,0,1,0-3-3A3,3,0,0,0,14,7Zm-8,0A3,3,0,1,0,3,4,3,3,0,0,0,6,7Zm0,2c-2.33,0-7,1.17-7,3.5V14H13V12.5C13,10.17,8.33,9,6,9Zm8,0a8.86,8.86,0,0,0-1.06.07,4.21,4.21,0,0,1,2.06,3.43V14h6V12.5C21,10.17,16.33,9,14,9Z"/></svg></span><span>医療機関の方</span></a></li>
         </ul>
       </div>
     </section>
@@ -1431,7 +1433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <ul class="fnav--menu">
               <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="service/index.html" class="nav-service arrow">サービス内容</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="flow/index.html" class="nav-flow arrow">ご利用の流れ&amp;料金</a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact/index.html?type=partner" class="nav-partner arrow">医療機関様はこちら</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="partner/index.html" class="nav-partner arrow">医療機関様はこちら</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about/index.html" class="nav-about arrow">明日香について</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="staff/index.html" class="nav-staff arrow">スタッフ紹介</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="recruit/index.html" class="nav-recruit arrow">採用情報</a></li>
@@ -1448,7 +1450,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 class="footer--logo2 font-jp"><a href="index.html"><img width="1041" height="708" src="wp/wp-content/uploads/2023/07/asuka-logo.png?v=2" alt="訪問看護ステーション明日香" decoding="async" loading="lazy" /></a></h2>
         <nav class="fnav2 font-jp">
           <ul class="fnav2--menu flex flex-c-wrap fz-14">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about/index.html" class="arrow arrow-round">事業所案内</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="privacy/index.html" class="arrow arrow-round">個人情報の取扱い<br class="pc-none">について</a></li>
           </ul>
         </nav>
